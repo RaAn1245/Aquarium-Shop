@@ -59,6 +59,8 @@
             padding-left: 20px;
             border-left: 5px solid #4ade80;
             color: #4ade80;
+            display: block;
+            clear: both;
         }
 
         .products-grid {
@@ -66,6 +68,7 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-bottom: 50px;
+            clear: both;
         }
 
         .product-card {
@@ -134,9 +137,7 @@
             padding: 40px;
             background: rgba(74, 222, 128, 0.1);
             border-radius: 20px;
-            margin-top: 50px auto 0 auto;
-            margin-left: auto;    
-            margin-right: auto;
+            margin: 50px auto 0 auto;
             max-width: 600px;
             border: 2px solid rgba(74, 222, 128, 0.3);
         }
@@ -145,32 +146,12 @@
             font-size: 1.8em;
             margin-bottom: 15px;
             color: #4ade80;
-            
         }
 
         .contact-info {
             font-size: 1.2em;
             color: #cbd5e1;
             font-family: 'Space Mono', monospace;
-        }
-
-        /* Instructions for editing - remove this section when done */
-        .edit-instructions {
-            background: rgba(251, 191, 36, 0.15);
-            border: 2px solid rgba(251, 191, 36, 0.5);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 30px;
-            color: #fbbf24;
-        }
-
-        .edit-instructions h3 {
-            margin-bottom: 10px;
-        }
-
-        .edit-instructions ul {
-            margin-left: 20px;
-            line-height: 1.8;
         }
 
         @media (max-width: 768px) {
@@ -186,8 +167,6 @@
 </head>
 <body>
     <div class="container">
-        
-       
 
         <header>
             <h1>🦐 Aquarium Shop</h1>
@@ -198,10 +177,8 @@
         <h2 class="section-title">🦐 Creveti</h2>
         <div class="products-grid">
             
-            <!-- PRODUCT 1 - Edit this section -->
             <div class="product-card">
                 <div class="product-image">
-                    <!-- Replace YOUR_IMAGE_URL_HERE with your actual image link -->
                     <img src="https://i.imgur.com/2Hqg4X5.jpg" alt="Cherry Shrimp" onerror="this.parentElement.innerHTML='https://i.imgur.com/2Hqg4X5.jpg'">
                 </div>
                 <div class="product-info">
@@ -211,17 +188,15 @@
                 </div>
             </div>
 
-           
-            <!-- TO ADD MORE SHRIMP: Copy from <div class="product-card"> to </div> and paste below -->
- 
+            <!-- TO ADD MORE SHRIMP: Copy a product-card div and paste here -->
 
         </div>
+        <!-- END SHRIMP SECTION -->
 
         <!-- PLANTS SECTION -->
         <h2 class="section-title">🌿 Plante De Acvariu</h2>
         <div class="products-grid">
             
-            <!-- PLANT 1 - Edit this section -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="https://i.imgur.com/wZ4llz1.jpg" alt="Java Moss" onerror="this.parentElement.innerHTML='https://i.imgur.com/wZ4llz1.jpg'">
@@ -233,7 +208,6 @@
                 </div>
             </div>
 
-            <!-- PLANT 2 - Edit this section -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="https://i.imgur.com/J6zT4Tp.jpg" alt="Vallisneria" onerror="this.parentElement.innerHTML='https://i.imgur.com/J6zT4Tp.jpg'">
@@ -245,7 +219,6 @@
                 </div>
             </div>
 
-            <!-- PLANT 3 - Edit this section -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="https://i.imgur.com/omGZmam.jpg" alt="Guppy Grass" onerror="this.parentElement.innerHTML='https://i.imgur.com/omGZmam.jpg'">
@@ -257,7 +230,6 @@
                 </div>
             </div>
             
-            <!-- PLANT 4 - Edit this section -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="https://i.imgur.com/c65E5PX.jpg" alt="Rotala" onerror="this.parentElement.innerHTML='https://i.imgur.com/c65E5PX.jpg'">
@@ -269,7 +241,6 @@
                 </div>
             </div>
             
-            <!-- PLANT 5 - Edit this section -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="https://i.imgur.com/wB7rrGj.jpg" alt="Gazon Micro Sword" onerror="this.parentElement.innerHTML='https://i.imgur.com/wB7rrGj.jpg'">
@@ -281,28 +252,77 @@
                 </div>
             </div>
 
-            <!-- PLANT 6 - Edit this section -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="https://i.imgur.com/Ynq2zhq.jpg" alt="Mai Multe Plante In Curand" onerror="this.parentElement.innerHTML='https://i.imgur.com/Ynq2zhq.jpg'">
                 </div>
                 <div class="product-info">
-                    <div class="product-name">Mai Multe Plante In Curand--></div>
+                    <div class="product-name">Mai Multe Plante In Curand</div>
                     <div class="product-description">Gazon Monte Carlo, Riccia Moss, Phoenix Moss</div>
                     <div class="product-price"></div>
                 </div>
-              </div>
+            </div>
 
-            
-
-            <!-- TO ADD MORE PLANTS: Copy from <div class="product-card"> to </div> and paste below -->
+            <!-- TO ADD MORE PLANTS: Copy a product-card div and paste here -->
 
         </div>
+        <!-- END PLANTS SECTION -->
 
-             <!-- CONTACT SECTION - Edit your contact info here -->
-             <div class="contact-section">
-                  <h2>📱 Contact/Comenzi</h2>
-                  <p class="contact-info">
+        <!-- SNAILS/OTHER CREATURES SECTION -->
+        <h2 class="section-title">🐌 Alte Vietati</h2>
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://i.imgur.com/2LPgZ5V.jpg" alt="Coming Soon" onerror="this.parentElement.innerHTML='https://i.imgur.com/2LPgZ5V.jpg'">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Melci de Substrat</div>
+                    <div class="product-description">Melcii de Substrat din Malaysia se hrănesc cu resturi și ajută substratul să rămână curat.</div>
+                    <div class="product-price">2-3-5RON/Buc</div>
+                </div>
+            </div>
+
+            <!-- TO ADD MORE: Copy a product-card div and paste here -->
+
+        </div>
+        <!-- END SNAILS SECTION -->
+
+       <!-- MISC PRODUCTS SECTION -->
+       <h2 class="section-title">🍂 Alte Produse</h2>
+       <div class="products-grid">
+    
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://i.imgur.com/WSCuZJf.jpg" alt="Oak Leaves" onerror="this.parentElement.innerHTML='https://i.imgur.com/WSCuZJf.jpg'">
+         </div>
+         <div class="product-info">
+             <div class="product-name">Frunze de Stejar</div>
+             <div class="product-description">Ajuta la mentinerea pH-ului, antimicrobiene</div>
+             <div class="product-price">10-20RON/PACHET</div>
+         </div>
+     </div>
+           
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://i.imgur.com/0dCDNtl.jpg" alt="Conuri Arin" onerror="this.parentElement.innerHTML='https://i.imgur.com/0dCDNtl.jpg'">
+         </div>
+         <div class="product-info">
+             <div class="product-name">Conuri Arin</div>
+             <div class="product-description">Conurile de arin au efect antibacterian natural și creează un mediu sănătos pentru pești și creveți.</div>
+             <div class="product-price">5-10RON/PACHET</div>
+         </div>
+     </div>
+
+    <!-- TO ADD MORE: Copy a product-card div and paste here -->
+
+</div>
+<!-- END MISC SECTION -->
+
+        <!-- CONTACT SECTION -->
+        <div class="contact-section">
+            <h2>📱 Contact/Comenzi</h2>
+            <p class="contact-info">
                 Text/WhatsApp: <strong>0759696921</strong><br>
                 Pentru Comenzi sau si precomenzi va rog lasati un mesaj pe whatsapp in formatul urmator: 
                 Nume Produs(e), Cantitate, Localitate(sau oras).
